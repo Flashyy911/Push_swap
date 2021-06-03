@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_push_a.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_push_b.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_reverse_rotate_a.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_reverse_rotate_b.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_reverse_rotate_rr.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_rotate_a.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_rotate_b.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_rotate_rr.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_a.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_b.c
+
+/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_ss.c
+
+/Users/asbai-el/CLionProjects/push_swap/main.c
+stdio.h
+-
+
