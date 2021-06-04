@@ -10,7 +10,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/Instructions/ft_swap_a.c.o"
   "CMakeFiles/push_swap.dir/Instructions/ft_swap_b.c.o"
   "CMakeFiles/push_swap.dir/Instructions/ft_swap_ss.c.o"
+  "CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o"
+  "CMakeFiles/push_swap.dir/Utils/ft_populate.c.o"
   "CMakeFiles/push_swap.dir/main.c.o"
+  "CMakeFiles/push_swap.dir/src/ft_sort.c.o"
   "push_swap"
   "push_swap.pdb"
 )

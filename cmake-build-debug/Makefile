@@ -58,10 +58,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/174A96A2-76B4-496C-93EF-8D10EA12955D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/174A96A2-76B4-496C-93EF-8D10EA12955D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /Users/asbai-el/CLionProjects/push_swap/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/174A96A2-76B4-496C-93EF-8D10EA12955D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/174A96A2-76B4-496C-93EF-8D10EA12955D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -439,6 +439,60 @@ Instructions/ft_swap_ss.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Instructions/ft_swap_ss.c.s
 .PHONY : Instructions/ft_swap_ss.c.s
 
+Utils/ft_check_string_is_digit.o: Utils/ft_check_string_is_digit.c.o
+
+.PHONY : Utils/ft_check_string_is_digit.o
+
+# target to build an object file
+Utils/ft_check_string_is_digit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o
+.PHONY : Utils/ft_check_string_is_digit.c.o
+
+Utils/ft_check_string_is_digit.i: Utils/ft_check_string_is_digit.c.i
+
+.PHONY : Utils/ft_check_string_is_digit.i
+
+# target to preprocess a source file
+Utils/ft_check_string_is_digit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.i
+.PHONY : Utils/ft_check_string_is_digit.c.i
+
+Utils/ft_check_string_is_digit.s: Utils/ft_check_string_is_digit.c.s
+
+.PHONY : Utils/ft_check_string_is_digit.s
+
+# target to generate assembly for a file
+Utils/ft_check_string_is_digit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.s
+.PHONY : Utils/ft_check_string_is_digit.c.s
+
+Utils/ft_populate.o: Utils/ft_populate.c.o
+
+.PHONY : Utils/ft_populate.o
+
+# target to build an object file
+Utils/ft_populate.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_populate.c.o
+.PHONY : Utils/ft_populate.c.o
+
+Utils/ft_populate.i: Utils/ft_populate.c.i
+
+.PHONY : Utils/ft_populate.i
+
+# target to preprocess a source file
+Utils/ft_populate.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_populate.c.i
+.PHONY : Utils/ft_populate.c.i
+
+Utils/ft_populate.s: Utils/ft_populate.c.s
+
+.PHONY : Utils/ft_populate.s
+
+# target to generate assembly for a file
+Utils/ft_populate.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_populate.c.s
+.PHONY : Utils/ft_populate.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -465,6 +519,33 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.s
 .PHONY : main.c.s
+
+src/ft_sort.o: src/ft_sort.c.o
+
+.PHONY : src/ft_sort.o
+
+# target to build an object file
+src/ft_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort.c.o
+.PHONY : src/ft_sort.c.o
+
+src/ft_sort.i: src/ft_sort.c.i
+
+.PHONY : src/ft_sort.i
+
+# target to preprocess a source file
+src/ft_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort.c.i
+.PHONY : src/ft_sort.c.i
+
+src/ft_sort.s: src/ft_sort.c.s
+
+.PHONY : src/ft_sort.s
+
+# target to generate assembly for a file
+src/ft_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/ft_sort.c.s
+.PHONY : src/ft_sort.c.s
 
 # Help Target
 help:
@@ -508,9 +589,18 @@ help:
 	@echo "... Instructions/ft_swap_ss.o"
 	@echo "... Instructions/ft_swap_ss.i"
 	@echo "... Instructions/ft_swap_ss.s"
+	@echo "... Utils/ft_check_string_is_digit.o"
+	@echo "... Utils/ft_check_string_is_digit.i"
+	@echo "... Utils/ft_check_string_is_digit.s"
+	@echo "... Utils/ft_populate.o"
+	@echo "... Utils/ft_populate.i"
+	@echo "... Utils/ft_populate.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/ft_sort.o"
+	@echo "... src/ft_sort.i"
+	@echo "... src/ft_sort.s"
 .PHONY : help
 
 

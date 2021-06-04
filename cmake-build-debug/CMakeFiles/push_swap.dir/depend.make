@@ -23,5 +23,13 @@ CMakeFiles/push_swap.dir/Instructions/ft_swap_b.c.o: ../Instructions/ft_swap_b.c
 
 CMakeFiles/push_swap.dir/Instructions/ft_swap_ss.c.o: ../Instructions/ft_swap_ss.c
 
+CMakeFiles/push_swap.dir/Utils/ft_populate.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/Utils/ft_populate.c.o: ../Utils/ft_populate.c
+CMakeFiles/push_swap.dir/Utils/ft_populate.c.o: ../main.h
+
+CMakeFiles/push_swap.dir/main.c.o: ../Libft/libft.h
 CMakeFiles/push_swap.dir/main.c.o: ../main.c
+CMakeFiles/push_swap.dir/main.c.o: ../main.h
+
+CMakeFiles/push_swap.dir/src/ft_sort.c.o: ../src/ft_sort.c
 

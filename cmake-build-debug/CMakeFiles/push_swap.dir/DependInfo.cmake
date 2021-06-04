@@ -15,7 +15,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_a.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Instructions/ft_swap_a.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_b.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Instructions/ft_swap_b.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_ss.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Instructions/ft_swap_ss.c.o"
+  "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_check_string_is_digit.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o"
+  "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_populate.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_populate.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/main.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o"
+  "/Users/asbai-el/CLionProjects/push_swap/src/ft_sort.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

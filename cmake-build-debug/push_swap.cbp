@@ -107,7 +107,22 @@
 		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_ss.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Libft/libft.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Utils/ft_check_string_is_digit.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Utils/ft_populate.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/main.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/main.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/src/ft_sort.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/CMakeLists.txt">

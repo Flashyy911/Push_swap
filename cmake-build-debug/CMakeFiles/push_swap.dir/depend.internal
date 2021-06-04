@@ -23,5 +23,13 @@ CMakeFiles/push_swap.dir/Instructions/ft_swap_b.c.o
  /Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_b.c
 CMakeFiles/push_swap.dir/Instructions/ft_swap_ss.c.o
  /Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_ss.c
+CMakeFiles/push_swap.dir/Utils/ft_populate.c.o
+ /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
+ /Users/asbai-el/CLionProjects/push_swap/Utils/ft_populate.c
+ /Users/asbai-el/CLionProjects/push_swap/main.h
 CMakeFiles/push_swap.dir/main.c.o
+ /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
  /Users/asbai-el/CLionProjects/push_swap/main.c
+ /Users/asbai-el/CLionProjects/push_swap/main.h
+CMakeFiles/push_swap.dir/src/ft_sort.c.o
+ /Users/asbai-el/CLionProjects/push_swap/src/ft_sort.c
