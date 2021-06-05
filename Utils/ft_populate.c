@@ -3,21 +3,20 @@
 //
 #include "../main.h"
 
-int ft_populate(int argc, char **argv, int **stack_a, int **stack_b)
+int ft_populate(int argc, char **argv, s_list *stack_a)
 {
     int i;
-    int len;
 
     i = 2;
-    len = 0;
-    while (i++ <=  (argc - 2))
+    if (!ft_check_string_is_digit(argv[1]))
+        return -1;
+    while(i <=  (argc - 1))
     {
-      if (ft_check_string_is_digit(argv[i]))
-      {
-          printf("error");
+      if (!ft_check_string_is_digit(argv[i]))
           return -1;
-      }
-
+        stack_a->next =  ft_new_stack_list((int)ft_atoi(argv[i]));
+      stack_a = stack_a->next;
+      i++;
     }
-    return len;
+    return argc - 1;
 }

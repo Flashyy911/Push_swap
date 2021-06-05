@@ -14,10 +14,6 @@ stddef.h
 unistd.h
 -
 
-/Users/asbai-el/CLionProjects/push_swap/Utils/ft_populate.c
-../main.h
-/Users/asbai-el/CLionProjects/push_swap/main.h
-
 /Users/asbai-el/CLionProjects/push_swap/main.c
 main.h
 /Users/asbai-el/CLionProjects/push_swap/main.h
@@ -30,7 +26,5 @@ Libft/libft.h
 stdlib.h
 -
 string.h
--
-libc.h
 -
 

@@ -53,10 +53,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/F0656055-D2CB-402A-982A-8F5D5CDC5039/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/F0656055-D2CB-402A-982A-8F5D5CDC5039/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -271,6 +271,71 @@ CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.s"
 	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/push_swap/Utils/ft_check_string_is_digit.c -o CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.s
 
+CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o: ../Libft/ft_lstnew_bonus.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o -c /Users/asbai-el/CLionProjects/push_swap/Libft/ft_lstnew_bonus.c
+
+CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.i"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/push_swap/Libft/ft_lstnew_bonus.c > CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.i
+
+CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.s"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/push_swap/Libft/ft_lstnew_bonus.c -o CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.s
+
+CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.o: ../Libft/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.o"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.o -c /Users/asbai-el/CLionProjects/push_swap/Libft/ft_isdigit.c
+
+CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.i"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/push_swap/Libft/ft_isdigit.c > CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.i
+
+CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.s"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/push_swap/Libft/ft_isdigit.c -o CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.s
+
+CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o: ../Utils/ft_structs_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o -c /Users/asbai-el/CLionProjects/push_swap/Utils/ft_structs_utils.c
+
+CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.i"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/push_swap/Utils/ft_structs_utils.c > CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.i
+
+CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.s"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/push_swap/Utils/ft_structs_utils.c -o CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.s
+
+CMakeFiles/push_swap.dir/Libft/ft_atoi.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/Libft/ft_atoi.c.o: ../Libft/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/push_swap.dir/Libft/ft_atoi.c.o"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/Libft/ft_atoi.c.o -c /Users/asbai-el/CLionProjects/push_swap/Libft/ft_atoi.c
+
+CMakeFiles/push_swap.dir/Libft/ft_atoi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/Libft/ft_atoi.c.i"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/push_swap/Libft/ft_atoi.c > CMakeFiles/push_swap.dir/Libft/ft_atoi.c.i
+
+CMakeFiles/push_swap.dir/Libft/ft_atoi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/Libft/ft_atoi.c.s"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/push_swap/Libft/ft_atoi.c -o CMakeFiles/push_swap.dir/Libft/ft_atoi.c.s
+
+CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o: ../Libft/ft_isspace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o -c /Users/asbai-el/CLionProjects/push_swap/Libft/ft_isspace.c
+
+CMakeFiles/push_swap.dir/Libft/ft_isspace.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/Libft/ft_isspace.c.i"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/push_swap/Libft/ft_isspace.c > CMakeFiles/push_swap.dir/Libft/ft_isspace.c.i
+
+CMakeFiles/push_swap.dir/Libft/ft_isspace.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/Libft/ft_isspace.c.s"
+	/Users/asbai-el/brew/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/push_swap/Libft/ft_isspace.c -o CMakeFiles/push_swap.dir/Libft/ft_isspace.c.s
+
 # Object files for target push_swap
 push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/main.c.o" \
@@ -287,7 +352,12 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_rr.c.o" \
 "CMakeFiles/push_swap.dir/Utils/ft_populate.c.o" \
 "CMakeFiles/push_swap.dir/src/ft_sort.c.o" \
-"CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o"
+"CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o" \
+"CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o" \
+"CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.o" \
+"CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o" \
+"CMakeFiles/push_swap.dir/Libft/ft_atoi.c.o" \
+"CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o"
 
 # External object files for target push_swap
 push_swap_EXTERNAL_OBJECTS =
@@ -307,9 +377,14 @@ push_swap: CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_rr.c.o
 push_swap: CMakeFiles/push_swap.dir/Utils/ft_populate.c.o
 push_swap: CMakeFiles/push_swap.dir/src/ft_sort.c.o
 push_swap: CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o
+push_swap: CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o
+push_swap: CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.o
+push_swap: CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o
+push_swap: CMakeFiles/push_swap.dir/Libft/ft_atoi.c.o
+push_swap: CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: CMakeFiles/push_swap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable push_swap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable push_swap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

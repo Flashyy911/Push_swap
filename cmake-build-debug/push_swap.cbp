@@ -107,6 +107,18 @@
 		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_ss.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Libft/ft_atoi.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Libft/ft_isdigit.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Libft/ft_isspace.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Libft/ft_lstnew_bonus.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Libft/libft.h">
 			<Option target="push_swap"/>
 		</Unit>
@@ -114,6 +126,9 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Utils/ft_populate.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Utils/ft_structs_utils.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/main.c">

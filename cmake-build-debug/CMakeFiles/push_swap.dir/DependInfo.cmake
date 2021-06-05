@@ -15,8 +15,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_a.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Instructions/ft_swap_a.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_b.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Instructions/ft_swap_b.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/Instructions/ft_swap_ss.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Instructions/ft_swap_ss.c.o"
+  "/Users/asbai-el/CLionProjects/push_swap/Libft/ft_atoi.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Libft/ft_atoi.c.o"
+  "/Users/asbai-el/CLionProjects/push_swap/Libft/ft_isdigit.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.o"
+  "/Users/asbai-el/CLionProjects/push_swap/Libft/ft_isspace.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o"
+  "/Users/asbai-el/CLionProjects/push_swap/Libft/ft_lstnew_bonus.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_check_string_is_digit.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_populate.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_populate.c.o"
+  "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_structs_utils.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/main.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/src/ft_sort.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort.c.o"
   )

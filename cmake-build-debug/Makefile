@@ -58,10 +58,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/F0656055-D2CB-402A-982A-8F5D5CDC5039/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/F0656055-D2CB-402A-982A-8F5D5CDC5039/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /Users/asbai-el/CLionProjects/push_swap/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/F0656055-D2CB-402A-982A-8F5D5CDC5039/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/10E507DC-3F69-4783-BA9C-877CB0F2A2E2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n00004sm00016d/T/AppTranslocation/F0656055-D2CB-402A-982A-8F5D5CDC5039/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -439,6 +439,114 @@ Instructions/ft_swap_ss.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Instructions/ft_swap_ss.c.s
 .PHONY : Instructions/ft_swap_ss.c.s
 
+Libft/ft_atoi.o: Libft/ft_atoi.c.o
+
+.PHONY : Libft/ft_atoi.o
+
+# target to build an object file
+Libft/ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_atoi.c.o
+.PHONY : Libft/ft_atoi.c.o
+
+Libft/ft_atoi.i: Libft/ft_atoi.c.i
+
+.PHONY : Libft/ft_atoi.i
+
+# target to preprocess a source file
+Libft/ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_atoi.c.i
+.PHONY : Libft/ft_atoi.c.i
+
+Libft/ft_atoi.s: Libft/ft_atoi.c.s
+
+.PHONY : Libft/ft_atoi.s
+
+# target to generate assembly for a file
+Libft/ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_atoi.c.s
+.PHONY : Libft/ft_atoi.c.s
+
+Libft/ft_isdigit.o: Libft/ft_isdigit.c.o
+
+.PHONY : Libft/ft_isdigit.o
+
+# target to build an object file
+Libft/ft_isdigit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.o
+.PHONY : Libft/ft_isdigit.c.o
+
+Libft/ft_isdigit.i: Libft/ft_isdigit.c.i
+
+.PHONY : Libft/ft_isdigit.i
+
+# target to preprocess a source file
+Libft/ft_isdigit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.i
+.PHONY : Libft/ft_isdigit.c.i
+
+Libft/ft_isdigit.s: Libft/ft_isdigit.c.s
+
+.PHONY : Libft/ft_isdigit.s
+
+# target to generate assembly for a file
+Libft/ft_isdigit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_isdigit.c.s
+.PHONY : Libft/ft_isdigit.c.s
+
+Libft/ft_isspace.o: Libft/ft_isspace.c.o
+
+.PHONY : Libft/ft_isspace.o
+
+# target to build an object file
+Libft/ft_isspace.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o
+.PHONY : Libft/ft_isspace.c.o
+
+Libft/ft_isspace.i: Libft/ft_isspace.c.i
+
+.PHONY : Libft/ft_isspace.i
+
+# target to preprocess a source file
+Libft/ft_isspace.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_isspace.c.i
+.PHONY : Libft/ft_isspace.c.i
+
+Libft/ft_isspace.s: Libft/ft_isspace.c.s
+
+.PHONY : Libft/ft_isspace.s
+
+# target to generate assembly for a file
+Libft/ft_isspace.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_isspace.c.s
+.PHONY : Libft/ft_isspace.c.s
+
+Libft/ft_lstnew_bonus.o: Libft/ft_lstnew_bonus.c.o
+
+.PHONY : Libft/ft_lstnew_bonus.o
+
+# target to build an object file
+Libft/ft_lstnew_bonus.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o
+.PHONY : Libft/ft_lstnew_bonus.c.o
+
+Libft/ft_lstnew_bonus.i: Libft/ft_lstnew_bonus.c.i
+
+.PHONY : Libft/ft_lstnew_bonus.i
+
+# target to preprocess a source file
+Libft/ft_lstnew_bonus.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.i
+.PHONY : Libft/ft_lstnew_bonus.c.i
+
+Libft/ft_lstnew_bonus.s: Libft/ft_lstnew_bonus.c.s
+
+.PHONY : Libft/ft_lstnew_bonus.s
+
+# target to generate assembly for a file
+Libft/ft_lstnew_bonus.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.s
+.PHONY : Libft/ft_lstnew_bonus.c.s
+
 Utils/ft_check_string_is_digit.o: Utils/ft_check_string_is_digit.c.o
 
 .PHONY : Utils/ft_check_string_is_digit.o
@@ -492,6 +600,33 @@ Utils/ft_populate.s: Utils/ft_populate.c.s
 Utils/ft_populate.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_populate.c.s
 .PHONY : Utils/ft_populate.c.s
+
+Utils/ft_structs_utils.o: Utils/ft_structs_utils.c.o
+
+.PHONY : Utils/ft_structs_utils.o
+
+# target to build an object file
+Utils/ft_structs_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o
+.PHONY : Utils/ft_structs_utils.c.o
+
+Utils/ft_structs_utils.i: Utils/ft_structs_utils.c.i
+
+.PHONY : Utils/ft_structs_utils.i
+
+# target to preprocess a source file
+Utils/ft_structs_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.i
+.PHONY : Utils/ft_structs_utils.c.i
+
+Utils/ft_structs_utils.s: Utils/ft_structs_utils.c.s
+
+.PHONY : Utils/ft_structs_utils.s
+
+# target to generate assembly for a file
+Utils/ft_structs_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.s
+.PHONY : Utils/ft_structs_utils.c.s
 
 main.o: main.c.o
 
@@ -589,12 +724,27 @@ help:
 	@echo "... Instructions/ft_swap_ss.o"
 	@echo "... Instructions/ft_swap_ss.i"
 	@echo "... Instructions/ft_swap_ss.s"
+	@echo "... Libft/ft_atoi.o"
+	@echo "... Libft/ft_atoi.i"
+	@echo "... Libft/ft_atoi.s"
+	@echo "... Libft/ft_isdigit.o"
+	@echo "... Libft/ft_isdigit.i"
+	@echo "... Libft/ft_isdigit.s"
+	@echo "... Libft/ft_isspace.o"
+	@echo "... Libft/ft_isspace.i"
+	@echo "... Libft/ft_isspace.s"
+	@echo "... Libft/ft_lstnew_bonus.o"
+	@echo "... Libft/ft_lstnew_bonus.i"
+	@echo "... Libft/ft_lstnew_bonus.s"
 	@echo "... Utils/ft_check_string_is_digit.o"
 	@echo "... Utils/ft_check_string_is_digit.i"
 	@echo "... Utils/ft_check_string_is_digit.s"
 	@echo "... Utils/ft_populate.o"
 	@echo "... Utils/ft_populate.i"
 	@echo "... Utils/ft_populate.s"
+	@echo "... Utils/ft_structs_utils.o"
+	@echo "... Utils/ft_structs_utils.i"
+	@echo "... Utils/ft_structs_utils.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -8,18 +8,23 @@
 #include "Libft/libft.h"
 #include <stdlib.h>
 #include <string.h>
-#include <libc.h>
 
 
 typedef	struct			stack_list
 {
-    void				*content;
-    struct s_list		*next;
+    int				value;
+    struct stack_list		*next;
 }						s_list;
 
 
 void ft_sort(int stack_len,int *stack_a, int *stack_b);
-int ft_populate(int argc, char **argv, int **stack_a, int **stack_b);
+void	ft_stackclear(s_list **lst);
+int ft_populate(int argc, char **argv, s_list *stack_a);
+s_list	*ft_new_stack_list(int value);
 int ft_check_string_is_digit(char *str);
-
+void ft_swap_a(s_list *stack_a);
+void ft_swap_ss(s_list *stack_a, s_list *stack_b);
+void ft_swap_b(s_list *stack_b);
+void ft_push_b(s_list *stack_a, s_list *stack_b);
+void ft_push_a(s_list *stack_a, s_list *stack_b);
 #endif //PUSH_SWAP_MAIN_H

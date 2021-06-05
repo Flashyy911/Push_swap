@@ -8,10 +8,13 @@
 
 int ft_check_string_is_digit(char *str)
 {
-    if(*str == '+' || *str == '-')
-        *str++;
-    while(*str++)
+    if((*str == '+' || *str == '-') && *(str + 1 ))
+        str++;
+    while(*str)
+    {
         if (!ft_isdigit(*str))
-            return - 1;
-    return 0;
+            return 0;
+    str++;
+    }
+    return 1;
 }
