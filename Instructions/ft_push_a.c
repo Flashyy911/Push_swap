@@ -3,12 +3,13 @@
 //
 #include "../main.h"
 
-void ft_push_a(s_list *stack_a, s_list *stack_b)
+void ft_push_a(s_list **stack_a, s_list **stack_b)
 {
+    s_list *tmp;
+
     printf("push a\n");
-    while(stack_b->next)
-        stack_b = stack_b->next;
-    while(stack_a->next)
-        stack_a = stack_a->next;
-    stack_a->next = ft_new_stack_list(stack_b->value);
+    tmp = *stack_b;
+    *stack_b = (*stack_b)->next;
+    tmp->next =(*stack_a);
+    *stack_a = tmp;
 }

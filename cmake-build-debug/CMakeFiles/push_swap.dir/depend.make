@@ -10,16 +10,28 @@ CMakeFiles/push_swap.dir/Instructions/ft_push_b.c.o: ../Libft/libft.h
 CMakeFiles/push_swap.dir/Instructions/ft_push_b.c.o: ../main.h
 
 CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_a.c.o: ../Instructions/ft_reverse_rotate_a.c
+CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_a.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_a.c.o: ../main.h
 
 CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_b.c.o: ../Instructions/ft_reverse_rotate_b.c
+CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_b.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_b.c.o: ../main.h
 
 CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_rr.c.o: ../Instructions/ft_reverse_rotate_rr.c
+CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_rr.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/Instructions/ft_reverse_rotate_rr.c.o: ../main.h
 
 CMakeFiles/push_swap.dir/Instructions/ft_rotate_a.c.o: ../Instructions/ft_rotate_a.c
+CMakeFiles/push_swap.dir/Instructions/ft_rotate_a.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/Instructions/ft_rotate_a.c.o: ../main.h
 
 CMakeFiles/push_swap.dir/Instructions/ft_rotate_b.c.o: ../Instructions/ft_rotate_b.c
+CMakeFiles/push_swap.dir/Instructions/ft_rotate_b.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/Instructions/ft_rotate_b.c.o: ../main.h
 
 CMakeFiles/push_swap.dir/Instructions/ft_rotate_rr.c.o: ../Instructions/ft_rotate_rr.c
+CMakeFiles/push_swap.dir/Instructions/ft_rotate_rr.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/Instructions/ft_rotate_rr.c.o: ../main.h
 
 CMakeFiles/push_swap.dir/Instructions/ft_swap_a.c.o: ../Instructions/ft_swap_a.c
 CMakeFiles/push_swap.dir/Instructions/ft_swap_a.c.o: ../Libft/libft.h
