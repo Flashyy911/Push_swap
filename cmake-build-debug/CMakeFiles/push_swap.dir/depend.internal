@@ -55,6 +55,15 @@ CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o
 CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o
  /Users/asbai-el/CLionProjects/push_swap/Libft/ft_lstnew_bonus.c
  /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
+CMakeFiles/push_swap.dir/Libft/ft_split.c.o
+ /Users/asbai-el/CLionProjects/push_swap/Libft/ft_split.c
+ /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
+CMakeFiles/push_swap.dir/Libft/ft_strlcpy.c.o
+ /Users/asbai-el/CLionProjects/push_swap/Libft/ft_strlcpy.c
+ /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
+CMakeFiles/push_swap.dir/Libft/ft_strlen.c.o
+ /Users/asbai-el/CLionProjects/push_swap/Libft/ft_strlen.c
+ /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
 CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o
  /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
  /Users/asbai-el/CLionProjects/push_swap/Utils/ft_check_string_is_digit.c
@@ -62,6 +71,10 @@ CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o
 CMakeFiles/push_swap.dir/Utils/ft_populate.c.o
  /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
  /Users/asbai-el/CLionProjects/push_swap/Utils/ft_populate.c
+ /Users/asbai-el/CLionProjects/push_swap/main.h
+CMakeFiles/push_swap.dir/Utils/ft_sort_utils.c.o
+ /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
+ /Users/asbai-el/CLionProjects/push_swap/Utils/ft_sort_utils.c
  /Users/asbai-el/CLionProjects/push_swap/main.h
 CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o
  /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
@@ -72,4 +85,6 @@ CMakeFiles/push_swap.dir/main.c.o
  /Users/asbai-el/CLionProjects/push_swap/main.c
  /Users/asbai-el/CLionProjects/push_swap/main.h
 CMakeFiles/push_swap.dir/src/ft_sort.c.o
+ /Users/asbai-el/CLionProjects/push_swap/Libft/libft.h
+ /Users/asbai-el/CLionProjects/push_swap/main.h
  /Users/asbai-el/CLionProjects/push_swap/src/ft_sort.c

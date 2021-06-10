@@ -13,103 +13,92 @@
 #include <stdio.h>
 #include "libft.h"
 
-static void				ft_clear(char **tab, int size)
-{
-	int i;
+#include "libft.h"
 
-	i = 0;
-	if (size < 0)
-		while (i <= size)
-			free(tab[i++]);
-	free(tab);
+static char			**ft_malloc_error(char **tab)
+{
+    unsigned int	i;
+
+    i = 0;
+    while (tab[i])
+    {
+        free(tab[i]);
+        i++;
+    }
+    free(tab);
+    return (NULL);
 }
 
-static	int				ft_tabsize(char const *s, int c)
+static unsigned int	ft_get_nb_strs(char const *s, char c)
 {
-	int i;
-	int len;
+    unsigned int	i;
+    unsigned int	nb_strs;
 
-	i = 0;
-	len = 0;
-	while (s[i])
-	{
-		if (s[i] == c && s[i + 1] != c && s[i + 1])
-			len++;
-		i++;
-	}
-	if (len == 0 && s[0] != c && s[0])
-		len++;
-	return (len);
+    if (!s[0])
+        return (0);
+    i = 0;
+    nb_strs = 0;
+    while (s[i] && s[i] == c)
+        i++;
+    while (s[i])
+    {
+        if (s[i] == c)
+        {
+            nb_strs++;
+            while (s[i] && s[i] == c)
+                i++;
+            continue ;
+        }
+        i++;
+    }
+    if (s[i - 1] != c)
+        nb_strs++;
+    return (nb_strs);
 }
 
-static char				**ft_taballoc(char const *s, int tab_size)
+static void			ft_get_next_str(char **next_str, unsigned int *next_str_len,
+                                       char c)
 {
-	int		i;
-	int		j;
-	int		s_len;
-	char	**tab;
+    unsigned int i;
 
-	i = 0;
-	j = 0;
-	s_len = ft_strlen(s);
-	if (!(tab = malloc(sizeof(char*) * tab_size + 1)))
-	{
-		ft_clear(tab, 0);
-		return (NULL);
-	}
-	tab[tab_size + 1] = 0;
-	while (i <= tab_size)
-	{
-		if (!(tab[i] = malloc(s_len + 1)))
-		{
-			ft_clear(tab, i);
-			return (NULL);
-		}
-		i++;
-	}
-	return (tab);
+    *next_str += *next_str_len;
+    *next_str_len = 0;
+    i = 0;
+    while (**next_str && **next_str == c)
+        (*next_str)++;
+    while ((*next_str)[i])
+    {
+        if ((*next_str)[i] == c)
+            return ;
+        (*next_str_len)++;
+        i++;
+    }
 }
 
-static void				ft_fill(char const *s, int c, char **tab)
+char				**ft_split(char const *s, char c)
 {
-	int i;
-	int j;
-	int k;
+    char			**tab;
+    char			*next_str;
+    unsigned int	next_str_len;
+    unsigned int	nb_strs;
+    unsigned int	i;
 
-	i = 0;
-	j = 0;
-	k = 0;
-	while (s[i])
-		if (s[i] == c)
-		{
-			if (s[i - 1] != c && i > 0)
-				tab[j++][k] = '\0';
-			while (s[i + 1] == c)
-				i++;
-			i++;
-			k = 0;
-		}
-		else
-			tab[j][k++] = s[i++];
-}
-
-char					**ft_split(char const *s, char c)
-{
-	char	**tab;
-	int		i;
-	int		j;
-	int		k;
-
-	if (s == NULL)
-		return (NULL);
-	k = 0;
-	j = 0;
-	i = 0;
-	if (!(tab = ft_taballoc(s, ft_tabsize(s, c))))
-	{
-		return (NULL);
-	}
-	ft_fill(s, c, tab);
-	tab[ft_tabsize(s, c)] = NULL;
-	return (tab);
+    if (!s)
+        return (NULL);
+    nb_strs = ft_get_nb_strs(s, c);
+    if (!(tab = (char **)malloc(sizeof(char *) * (nb_strs + 1))))
+        return (NULL);
+    i = 0;
+    next_str = (char *)s;
+    next_str_len = 0;
+    while (i < nb_strs)
+    {
+        ft_get_next_str(&next_str, &next_str_len, c);
+        if (!(tab[i] = (char *)malloc(sizeof(char) * (next_str_len + 1))))
+            return (ft_malloc_error(tab));
+        ft_strlcpy(tab[i], next_str, next_str_len + 1);
+        i++;
+    }
+    tab[i] = NULL;
+    return (tab);
 }

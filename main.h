@@ -12,23 +12,32 @@
 
 typedef	struct			stack_list
 {
-    int				value;
+    long long			value;
     struct stack_list		*next;
 }						s_list;
 
 
-
+int ft_check_is_int(long long nbr);
+int ft_is_sorted(s_list *stack);
+void ft_sort_2(s_list **stack);
+void ft_sort_3(s_list **stack_a);
+int ft_closest_exit (s_list *stack_a, s_list *index);
+void ft_sort_10(s_list **stack_a, s_list **stack_b);
 void	ft_stackclear(s_list **lst);
-int ft_populate(int argc, char **argv, s_list *stack_a);
-s_list	*ft_new_stack_list(int value);
-int ft_check_string_is_digit(char *str);
-
-
-void ft_sort(int stack_len,s_list **stack_a, s_list **stack_b);
+        int ft_stack_index(s_list *stack, s_list *index);
+s_list *ft_populate(char **argv);
+char **ft_handle_string_case(int argc, char** argv);
+s_list	*ft_new_stack_list(long long value);
+int ft_check_string_is_number(char *str);
+int ft_check_duplicates_and_int(s_list *stack);
+void ft_sort(s_list **stack_a, s_list **stack_b);
+int ft_check_input(char *str);
+int ft_stack_len(s_list *stack);
 void ft_reverse_rotate_rr(s_list **stack_a, s_list **stack_b);
 void ft_reverse_rotate_a(s_list **stack_a);
 void ft_reverse_rotate_b(s_list **stack_b);
 void ft_swap_ss(s_list **stack_a, s_list **stack_b);
+void print_stack(s_list *stack_a, s_list *stack_b);
 void ft_swap_b(s_list **stack_b);
 void ft_swap_a(s_list **stack_a);
 void ft_rotate_a(s_list **stack_a);

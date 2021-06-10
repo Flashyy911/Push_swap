@@ -1,22 +1,55 @@
-//
-// Created by Anass Sbai el idrissi on 6/4/21.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_populate.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asbai-el <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/06/07 18:08:20 by asbai-el          #+#    #+#             */
+/*   Updated: 2021/06/07 18:08:48 by asbai-el         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../main.h"
 
-int ft_populate(int argc, char **argv, s_list *stack_a)
+s_list *ft_populate( char **argv)
 {
-    int i;
+    char **new_string;
+    int j;
+    s_list *tmp;
+    s_list *stack_a;
 
-    i = 2;
-    if (!ft_check_string_is_digit(argv[1]))
-        return -1;
-    while(i <=  (argc - 1))
+    stack_a = NULL;
+    while(*argv)
     {
-      if (!ft_check_string_is_digit(argv[i]))
-          return -1;
-        stack_a->next =  ft_new_stack_list((int)ft_atoi(argv[i]));
-      stack_a = stack_a->next;
-      i++;
+        new_string = ft_split(*argv, ' ');
+        j = 0;
+        while (new_string[j] != NULL)
+        {
+            if (!ft_check_string_is_number(new_string[j]) || !ft_check_input(new_string[j]))
+            {
+                ft_stackclear(&tmp);
+                free(new_string);
+                return NULL;
+            }
+            if (stack_a == NULL)
+            {
+                stack_a = ft_new_stack_list(ft_atoi(new_string[j++]));
+                tmp = stack_a;
+            }
+            else
+            {
+                stack_a->next = ft_new_stack_list(ft_atoi(new_string[j++]));
+                stack_a = stack_a->next;
+            }
+        }
+        free(new_string);
+        *argv++;
     }
-    return argc - 1;
+    if (!ft_check_duplicates_and_int(tmp))
+    {
+        ft_stackclear(&tmp);
+        return NULL;
+    }
+    return tmp;
 }

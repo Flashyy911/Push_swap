@@ -13,14 +13,12 @@
 #include "libft.h"
 #include <stdio.h>
 
-int	ft_atoi(const char *str)
+long long   ft_atoi(const char *str)
 {
-	unsigned int	nbr;
-	int				mult;
+	long long       nbr;
 	int				i;
 	int				sign;
 
-	mult = 1;
 	nbr = 0;
 	i = 0;
 	sign = 1;
@@ -35,7 +33,7 @@ int	ft_atoi(const char *str)
 		i++;
 	while (ft_isdigit(str[i]) == 1 && str[i])
 	{
-		nbr = (nbr * 10) + ((int)(str[i]) - 48);
+		nbr = (nbr * 10) + ((str[i]) - 48);
 		i++;
 	}
 	return (nbr * sign);

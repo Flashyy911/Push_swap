@@ -7,7 +7,7 @@
 void ft_rotate_a(s_list **stack_a) {
     s_list *tmp;
 
-    printf("rotate a\n");
+    printf("ra\n");
     tmp = *stack_a;
 
     while(tmp->next)

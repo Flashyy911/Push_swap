@@ -1,21 +1,31 @@
 #include "main.h"
-void print_stack(s_list *stack_a, s_list *stack_b);
+
 int main(int argc, char **argv) {
 
     s_list *stack_a;
     int Stack_len;
     s_list *stack_b;
 
-    stack_a = ft_new_stack_list(ft_atoi(argv[1]));
+    if (argc < 2)
+        return -1;
+    stack_a = ft_populate( argv + 1);
     stack_b = NULL;
-    Stack_len = ft_populate(argc, argv, stack_a);
-    if (Stack_len == -1) {
-        printf("\nerror while parsing");
+    if (stack_a == NULL) {
+        printf("error\n");
         return -1;
     }
-    ft_sort(Stack_len, &stack_a, &stack_b);
-    ft_stackclear(&stack_a);
+
+    ft_sort(&stack_a, &stack_b);
+    //ft_sort(Stack_len, &stack_a, &stack_b);
+    /*print_stack(stack_a, stack_b);
+    ft_swap_a(&stack_a);
+    print_stack(stack_a, stack_b);
+    ft_push_b(&stack_a, &stack_b);
+    ft_push_b(&stack_a, &stack_b);
+    ft_push_b(&stack_a, &stack_b);
+    print_stack(stack_a, stack_b);*/
     ft_stackclear(&stack_b);
+    ft_stackclear(&stack_a);
     return 0;
 }
 

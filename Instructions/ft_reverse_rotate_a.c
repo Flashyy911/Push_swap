@@ -7,7 +7,7 @@
 void ft_reverse_rotate_a(s_list **stack_a) {
 
     s_list *tmp;
-
+    printf("rra\n");
     tmp = *stack_a;
     //last element becomes first
     while (tmp->next->next)

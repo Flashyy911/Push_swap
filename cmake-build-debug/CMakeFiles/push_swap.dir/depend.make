@@ -55,6 +55,15 @@ CMakeFiles/push_swap.dir/Libft/ft_isspace.c.o: ../Libft/ft_isspace.c
 CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o: ../Libft/ft_lstnew_bonus.c
 CMakeFiles/push_swap.dir/Libft/ft_lstnew_bonus.c.o: ../Libft/libft.h
 
+CMakeFiles/push_swap.dir/Libft/ft_split.c.o: ../Libft/ft_split.c
+CMakeFiles/push_swap.dir/Libft/ft_split.c.o: ../Libft/libft.h
+
+CMakeFiles/push_swap.dir/Libft/ft_strlcpy.c.o: ../Libft/ft_strlcpy.c
+CMakeFiles/push_swap.dir/Libft/ft_strlcpy.c.o: ../Libft/libft.h
+
+CMakeFiles/push_swap.dir/Libft/ft_strlen.c.o: ../Libft/ft_strlen.c
+CMakeFiles/push_swap.dir/Libft/ft_strlen.c.o: ../Libft/libft.h
+
 CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o: ../Libft/libft.h
 CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o: ../Utils/ft_check_string_is_digit.c
 CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o: ../main.h
@@ -62,6 +71,10 @@ CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o: ../main.h
 CMakeFiles/push_swap.dir/Utils/ft_populate.c.o: ../Libft/libft.h
 CMakeFiles/push_swap.dir/Utils/ft_populate.c.o: ../Utils/ft_populate.c
 CMakeFiles/push_swap.dir/Utils/ft_populate.c.o: ../main.h
+
+CMakeFiles/push_swap.dir/Utils/ft_sort_utils.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/Utils/ft_sort_utils.c.o: ../Utils/ft_sort_utils.c
+CMakeFiles/push_swap.dir/Utils/ft_sort_utils.c.o: ../main.h
 
 CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o: ../Libft/libft.h
 CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o: ../Utils/ft_structs_utils.c
@@ -71,5 +84,7 @@ CMakeFiles/push_swap.dir/main.c.o: ../Libft/libft.h
 CMakeFiles/push_swap.dir/main.c.o: ../main.c
 CMakeFiles/push_swap.dir/main.c.o: ../main.h
 
+CMakeFiles/push_swap.dir/src/ft_sort.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/src/ft_sort.c.o: ../main.h
 CMakeFiles/push_swap.dir/src/ft_sort.c.o: ../src/ft_sort.c
 
