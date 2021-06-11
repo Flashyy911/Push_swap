@@ -88,3 +88,9 @@ void ft_sort_10(s_list **stack_a, s_list **stack_b)
         ft_push_a(stack_a, stack_b);
 
 }
+
+
+void ft_sort_100(s_list **stack_a, s_list **stack_b)
+{
+
+}

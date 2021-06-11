@@ -24,6 +24,7 @@ void ft_sort_3(s_list **stack_a);
 int ft_closest_exit (s_list *stack_a, s_list *index);
 s_list *ft_stack_min (s_list *stack);
 void ft_sort_10(s_list **stack_a, s_list **stack_b);
+void ft_sort_100(s_list **stack_a, s_list **stack_b);
 void	ft_stackclear(s_list **lst);
         int ft_stack_index(s_list *stack, s_list *index);
 s_list *ft_populate(char **argv);
