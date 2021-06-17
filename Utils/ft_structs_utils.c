@@ -42,3 +42,31 @@ int ft_stack_len(s_list *stack)
     }
     return i;
 }
+
+s_list *ft_stack_max (s_list *stack)
+{
+    s_list *stack_max;
+
+    stack_max = stack;
+    stack = stack->next;
+    while (stack)
+    {
+        if (stack->value > stack_max->value )
+            stack_max = stack;
+        stack = stack->next;
+    }
+    return stack_max;
+}
+
+s_list *ft_stack_at_position(s_list *stack, int pos)
+{
+    int i;
+
+    i = 1;
+    while (i < pos)
+    {
+        stack = stack->next;
+        i++;
+    }
+    return stack;
+}

@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o"
   "CMakeFiles/push_swap.dir/Utils/ft_populate.c.o"
   "CMakeFiles/push_swap.dir/Utils/ft_sort_utils.c.o"
+  "CMakeFiles/push_swap.dir/Utils/ft_sort_utils2.c.o"
   "CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o"
   "CMakeFiles/push_swap.dir/main.c.o"
   "CMakeFiles/push_swap.dir/src/ft_sort.c.o"

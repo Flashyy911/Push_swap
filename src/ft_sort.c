@@ -14,8 +14,11 @@ void ft_sort(s_list **stack_a, s_list **stack_b)
         ft_sort_2(stack_a);
     else if(ft_stack_len(*stack_a) == 3)
         ft_sort_3(stack_a);
-    else //if(ft_stack_len(*stack_a) <= 10)
+    else if(ft_stack_len(*stack_a) <= 10)
         ft_sort_10(stack_a, stack_b);
+    else
+       ft_sort_100(stack_a, stack_b);
+
 
 }
 
@@ -69,28 +72,72 @@ void ft_sort_10(s_list **stack_a, s_list **stack_b)
     {
         stack_index = ft_stack_index(*stack_a,ft_stack_min(*stack_a));
         if (ft_closest_exit(stack_a_top, ft_stack_min(*stack_a)))
-            while(stack_index < stack_a_len)
-            {
+            while(stack_index++ < stack_a_len)
                 ft_reverse_rotate_a(stack_a);
-                stack_index++;
-            }
         else
-            while(stack_index > 0)
-            {
+            while(stack_index-- > 0)
                 ft_rotate_a(stack_a);
-                stack_index--;
-            }
         ft_push_b(stack_a,stack_b);
         stack_a_len--;
     }
     ft_sort_3(stack_a);
     while (*stack_b)
         ft_push_a(stack_a, stack_b);
-
 }
 
 
 void ft_sort_100(s_list **stack_a, s_list **stack_b)
 {
+    s_list *sorted_stack_a;
+    long long *pivot;
+    int stack_index;
+    int i;
+    int pivot_length;
 
+    sorted_stack_a = ft_sort_stack(stack_a);
+    pivot = ft_set_pivots(stack_a,sorted_stack_a);
+    pivot_length = 3;
+    if (ft_stack_len(*stack_a) >= 200)
+        pivot_length = 7;
+    i = 0;
+    while (i < pivot_length) {
+        if (!ft_closest_in_range(stack_a, pivot[i]))
+            i++;
+        else
+        {
+            stack_index = ft_stack_index(*stack_a, ft_closest_in_range(stack_a, pivot[i]));
+            if (ft_closest_exit(*stack_a, ft_closest_in_range(stack_a, pivot[i])))
+                while (stack_index++ < ft_stack_len(*stack_a))
+                    ft_reverse_rotate_a(stack_a);
+            else
+                while (stack_index-- > 0)
+                    ft_rotate_a(stack_a);
+            ft_push_b(stack_a, stack_b);
+        }
+    }
+    while(ft_stack_len(*stack_a) > 3)
+    {
+        stack_index = ft_stack_index(*stack_a,ft_stack_min(*stack_a));
+        if (ft_closest_exit(*stack_a, ft_stack_min(*stack_a)))
+            while(stack_index++ <  ft_stack_len(*stack_a))
+                ft_reverse_rotate_a(stack_a);
+        else
+            while(stack_index-- > 0)
+                ft_rotate_a(stack_a);
+        ft_push_b(stack_a,stack_b);
+    }
+    ft_sort_3(stack_a);
+    while(ft_stack_len(*stack_b))
+    {
+        stack_index = ft_stack_index(*stack_b,ft_stack_max(*stack_b));
+        if (ft_closest_exit(*stack_b, ft_stack_max(*stack_b)))
+            while(stack_index++ <  ft_stack_len(*stack_b))
+                ft_reverse_rotate_b(stack_b);
+        else
+            while(stack_index-- > 0)
+                ft_rotate_b(stack_b);
+        ft_push_a(stack_a,stack_b);
+    }
+    ft_stackclear(&sorted_stack_a);
+    free(pivot);
 }

@@ -59,3 +59,32 @@ int ft_stack_index(s_list *stack, s_list *index)
     }
     return i;
 }
+
+s_list *ft_sort_stack(s_list **stack_a)
+{
+    s_list  *sorted_stack;
+    s_list *tmp;
+    s_list *stack_a_head;
+    s_list *sorted_stack_head;
+    long long current_min;
+
+    stack_a_head = *stack_a;
+    sorted_stack = ft_new_stack_list(ft_stack_min(*stack_a)->value);
+    sorted_stack_head = sorted_stack;
+    while((*stack_a)->next)
+    {
+        tmp = stack_a_head;
+        current_min = ft_stack_max(stack_a_head)->value;
+        while(tmp)
+        {
+            if (tmp->value > sorted_stack->value && tmp->value < current_min)
+                current_min = tmp->value;
+            tmp = tmp->next;
+        }
+        sorted_stack->next = ft_new_stack_list(current_min);
+        sorted_stack = sorted_stack->next;
+        *stack_a = (*stack_a)->next;
+    }
+    *stack_a = stack_a_head;
+    return sorted_stack_head;
+}

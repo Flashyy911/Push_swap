@@ -140,6 +140,9 @@
 		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Utils/ft_sort_utils.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Utils/ft_sort_utils2.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/push_swap/Utils/ft_structs_utils.c">
 			<Option target="push_swap"/>
 		</Unit>

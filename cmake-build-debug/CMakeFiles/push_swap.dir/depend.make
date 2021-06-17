@@ -76,6 +76,10 @@ CMakeFiles/push_swap.dir/Utils/ft_sort_utils.c.o: ../Libft/libft.h
 CMakeFiles/push_swap.dir/Utils/ft_sort_utils.c.o: ../Utils/ft_sort_utils.c
 CMakeFiles/push_swap.dir/Utils/ft_sort_utils.c.o: ../main.h
 
+CMakeFiles/push_swap.dir/Utils/ft_sort_utils2.c.o: ../Libft/libft.h
+CMakeFiles/push_swap.dir/Utils/ft_sort_utils2.c.o: ../Utils/ft_sort_utils2.c
+CMakeFiles/push_swap.dir/Utils/ft_sort_utils2.c.o: ../main.h
+
 CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o: ../Libft/libft.h
 CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o: ../Utils/ft_structs_utils.c
 CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o: ../main.h

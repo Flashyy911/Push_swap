@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_check_string_is_digit.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_check_string_is_digit.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_populate.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_populate.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_sort_utils.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_sort_utils.c.o"
+  "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_sort_utils2.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_sort_utils2.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/Utils/ft_structs_utils.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/Utils/ft_structs_utils.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/main.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o"
   "/Users/asbai-el/CLionProjects/push_swap/src/ft_sort.c" "/Users/asbai-el/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/ft_sort.c.o"
