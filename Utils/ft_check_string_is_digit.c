@@ -1,10 +1,15 @@
-//
-// Created by Anass Sbai el idrissi on 6/4/21.
-//
-#include "../main.h"
-
-
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_check_string_is_digit.c                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asbai-el <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/06/18 12:15:09 by asbai-el          #+#    #+#             */
+/*   Updated: 2021/06/18 12:15:31 by asbai-el         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "../Headers//main.h"
 
 int ft_check_string_is_number(char *str)
 {
@@ -30,6 +35,7 @@ int ft_check_input(char *str)
     }
     return 1;
 }
+
 int ft_check_duplicates_and_int(s_list *stack)
 {
     s_list *tmp;

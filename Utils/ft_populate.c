@@ -6,11 +6,11 @@
 /*   By: asbai-el <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 18:08:20 by asbai-el          #+#    #+#             */
-/*   Updated: 2021/06/07 18:08:48 by asbai-el         ###   ########.fr       */
+/*   Updated: 2021/06/18 12:16:08 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../main.h"
+#include "../Headers/main.h"
 
 s_list *ft_populate( char **argv)
 {
@@ -44,7 +44,7 @@ s_list *ft_populate( char **argv)
             }
         }
         free(new_string);
-        *argv++;
+        argv = argv + 1;
     }
     if (!ft_check_duplicates_and_int(tmp))
     {
