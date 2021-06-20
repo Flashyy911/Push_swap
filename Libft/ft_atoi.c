@@ -6,16 +6,13 @@
 /*   By: asbai-el <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/19 23:37:52 by asbai-el          #+#    #+#             */
-/*   Updated: 2019/11/04 18:31:31 by asbai-el         ###   ########.fr       */
+/*   Updated: 2021/06/19 14:04:42 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
-#include <stdio.h>
-
-long long   ft_atoi(const char *str)
+long long	ft_atoi(const char *str)
 {
-	long long       nbr;
+	long long		nbr;
 	int				i;
 	int				sign;
 

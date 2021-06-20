@@ -6,7 +6,7 @@
 /*   By: asbai-el <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 10:31:52 by asbai-el          #+#    #+#             */
-/*   Updated: 2019/11/06 18:16:09 by asbai-el         ###   ########.fr       */
+/*   Updated: 2021/06/19 14:07:28 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t c)
 {
-	int i;
+	int	i;
 
 	if (!dst || !src)
 		return (0);

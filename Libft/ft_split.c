@@ -6,99 +6,87 @@
 /*   By: asbai-el <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 19:33:54 by asbai-el          #+#    #+#             */
-/*   Updated: 2019/11/04 18:49:01 by asbai-el         ###   ########.fr       */
+/*   Updated: 2021/06/20 14:27:09 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdlib.h>
 
-#include <stdio.h>
-#include "libft.h"
-
-#include "libft.h"
-
-static char			**ft_malloc_error(char **tab)
+static int	unleah(char **str, int size)
 {
-    unsigned int	i;
-
-    i = 0;
-    while (tab[i])
-    {
-        free(tab[i]);
-        i++;
-    }
-    free(tab);
-    return (NULL);
+	while (size--)
+		free(str[size]);
+	return (-1);
 }
 
-static unsigned int	ft_get_nb_strs(char const *s, char c)
+static int	count_words(const char *str, char charset)
 {
-    unsigned int	i;
-    unsigned int	nb_strs;
+	int	i;
+	int	words;
 
-    if (!s[0])
-        return (0);
-    i = 0;
-    nb_strs = 0;
-    while (s[i] && s[i] == c)
-        i++;
-    while (s[i])
-    {
-        if (s[i] == c)
-        {
-            nb_strs++;
-            while (s[i] && s[i] == c)
-                i++;
-            continue ;
-        }
-        i++;
-    }
-    if (s[i - 1] != c)
-        nb_strs++;
-    return (nb_strs);
+	words = 0;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if ((str[i + 1] == charset || str[i + 1] == '\0') == 1
+			&& (str[i] == charset || str[i] == '\0') == 0)
+			words++;
+		i++;
+	}
+	return (words);
 }
 
-static void			ft_get_next_str(char **next_str, unsigned int *next_str_len,
-                                       char c)
+static void	write_word(char *dest, const char *from, char charset)
 {
-    unsigned int i;
+	int	i;
 
-    *next_str += *next_str_len;
-    *next_str_len = 0;
-    i = 0;
-    while (**next_str && **next_str == c)
-        (*next_str)++;
-    while ((*next_str)[i])
-    {
-        if ((*next_str)[i] == c)
-            return ;
-        (*next_str_len)++;
-        i++;
-    }
+	i = 0;
+	while ((from[i] == charset || from[i] == '\0') == 0)
+	{
+		dest[i] = from[i];
+		i++;
+	}
+	dest[i] = '\0';
 }
 
-char				**ft_split(char const *s, char c)
+static int	write_split(char **split, const char *str, char charset)
 {
-    char			**tab;
-    char			*next_str;
-    unsigned int	next_str_len;
-    unsigned int	nb_strs;
-    unsigned int	i;
+	int		i;
+	int		j;
+	int		word;
 
-    if (!s)
-        return (NULL);
-    nb_strs = ft_get_nb_strs(s, c);
-    if (!(tab = (char **)malloc(sizeof(char *) * (nb_strs + 1))))
-        return (NULL);
-    i = 0;
-    next_str = (char *)s;
-    next_str_len = 0;
-    while (i < nb_strs)
-    {
-        ft_get_next_str(&next_str, &next_str_len, c);
-        if (!(tab[i] = (char *)malloc(sizeof(char) * (next_str_len + 1))))
-            return (ft_malloc_error(tab));
-        ft_strlcpy(tab[i], next_str, next_str_len + 1);
-        i++;
-    }
-    tab[i] = NULL;
-    return (tab);
+	word = 0;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if ((str[i] == charset || str[i] == '\0') == 1)
+			i++;
+		else
+		{
+			j = 0;
+			while ((str[i + j] == charset || str[i + j] == '\0') == 0)
+				j++;
+			split[word] = (char *)malloc(sizeof(char) * (j + 1));
+			if (!split[word])
+				return (unleah(split, word - 1));
+			write_word(split[word], str + i, charset);
+			i += j;
+			word++;
+		}
+	}
+	return (0);
+}
+
+char	**ft_split(const char *str, char c)
+{
+	char	**res;
+	int		words;
+
+	words = count_words(str, c);
+	res = (char **)malloc(sizeof(char *) * (words + 1));
+	if (!res)
+		return (NULL);
+	res[words] = 0;
+	if (write_split(res, str, c) == -1)
+		return (NULL);
+	return (res);
 }

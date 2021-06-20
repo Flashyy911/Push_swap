@@ -6,7 +6,8 @@ def gen(mi, ma, num):
         while(r in l) :
             r = random.randint(mi, ma)
         l.append(r)
-    return " ".join( (str(i) for i in l) )
+        return " ".join( (str(i) for i in l) )
+
 def pR(l):
     for el in l: print(el,end=" ")
 i = 0
@@ -16,7 +17,7 @@ avg = 0
 n = 50
 OK = 0
 while (i < n):
-    ran = gen(-2147483648, 2147483647,500)
+    ran = gen(-2147483648, 2147483647,100)
     valid = os.popen(f"./push_swap {ran} | ./checker_Mac {ran} | tail -1").read()[:-1]
     num = os.popen(f"./push_swap {ran} | wc -l").read()[:-1]
     tem = int(num)
